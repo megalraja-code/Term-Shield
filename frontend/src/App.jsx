@@ -29,8 +29,8 @@ function App() {
         formData.append("text", text)
       }
 
-      const response = await fetch(
-        "http://127.0.0.1:8000/api/analysis/analyze",
+       const response = await fetch(
+            "https://term-shield-production.up.railway.app/api/analysis/analyze",
         {
           method: "POST",
           body: formData
